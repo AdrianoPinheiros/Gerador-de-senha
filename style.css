@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rebeccapurple;
+    font-family: Helvetica, 'Times New Roman';
+    color: #fff;
+   
+}
+
+.pw-container{
+    width: 45vw;
+    background-color: rgb(36, 3, 68);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw{
+    background-color: rgb(7, 6, 8);
+    display: flex;
+    font-size:1rem;
+    align-items:center;
+    height:70px;
+    width:100%;
+    position:relative;
+    padding:1rem;
+    overflow:auto;
+}
+
+.pw button{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0,20%);
+    transition: opacity 0.2 ease, transform 0.2s ease;
+    opacity: 0;
+    
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0,0%);
+}
+
+
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+
+.form-control{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: rgb(197, 118, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;  
+}
+
+@media (max-width: 912px){
+    .pw-container{
+        width: 90%;
+        height: 90vh;
+    }
+    
+    label{
+        font-size:1.5rem;
+    }
+    
+    .pw{
+        font-size:1.3rem;
+    }
+    
+    .generate{
+        width: 100%;
+        height: 70px;
+    }
+
+}
+
